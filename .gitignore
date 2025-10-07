@@ -1,0 +1,9 @@
+bin/
+obj/
+.local/
+*.user
+*.suo
+*.swp
+*.DS_Store
+node_modules/
+local.settings.json
