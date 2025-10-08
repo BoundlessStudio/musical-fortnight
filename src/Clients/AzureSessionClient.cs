@@ -22,6 +22,8 @@ public interface IAzureSessionClient
   Task<Stream> DownloadFileAsync(string sessionId, string fileName, CancellationToken cancellationToken = default);
 }
 
+// TODO implement the new API interface
+// https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter
 
 public class AzureSessionClient : IAzureSessionClient
 {
