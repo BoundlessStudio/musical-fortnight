@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace AzureAgentRuntimeOrchestrator.Models;
+namespace MusicalFortnight.Models;
 
 [JsonSerializable(typeof(ExecutionStartRequest))]
 [JsonSerializable(typeof(ExecutionDescriptor))]

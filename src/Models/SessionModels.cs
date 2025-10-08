@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace AzureAgentRuntimeOrchestrator.Models;
+namespace MusicalFortnight.Models;
 
 public record SessionInitializationRequest(string? SessionId, string? PreferredSessionId = null, int? ExpirationSeconds = null, int? MaxExecutions = null);
 
