@@ -72,7 +72,7 @@ public class WorkflowFunction
 
   [Function("WorkflowStatus")]
   public async Task<HttpResponseData> RunAsync(
-    [HttpTrigger(AuthorizationLevel.Function, "get", Route = "workflow/{instanceId}")] HttpRequestData req, string instanceId
+    [HttpTrigger(AuthorizationLevel.Function, "get", Route = "workflow/{instanceId}")] HttpRequestData req, string instanceId,
     [DurableClient] DurableTaskClient client,
     FunctionContext executionContext)
   {

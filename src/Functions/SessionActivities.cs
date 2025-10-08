@@ -15,11 +15,6 @@ public class SessionActivities
     this._sessionClient = sessionClient;
   }
 
-
-  [Function("InitializeSession")]
-  public Task<SessionDescriptor> InitializeSessionAsync([ActivityTrigger] SessionInitializationRequest request)
-      => _sessionClient.EnsureSessionAsync(request);
-
   [Function("UploadArtifacts")]
   public async Task UploadArtifactsAsync([ActivityTrigger] UploadArtifactsRequest request)
   {
